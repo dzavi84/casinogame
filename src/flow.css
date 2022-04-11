@@ -9,8 +9,8 @@ body {
 
 .box {
     position: relative;
-    height: 400px;
-    width: 380px;
+    height: 768px;
+    width: 1440px;
     display: block;
     background: linear-gradient(0deg, black, #444444);
 }
