@@ -13,6 +13,7 @@ body {
     width: 1440px;
     display: block;
     background: linear-gradient(0deg, black, #444444);
+    margin-top: -30px;
 }
 
 .glowing::before,

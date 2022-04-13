@@ -1,12 +1,16 @@
 import './App.css';
 import './flow.css';
+import './neonButton.css';
+import GlowBox from './GlowBox';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div class='box glowing'>
-      <div className='App'>
-        <h1>Hello from react</h1>
+    <div>
+      <div className='divBut'>
+        <NavBar></NavBar>, <NavBar className='drugi'></NavBar>
       </div>
+      <GlowBox></GlowBox>
     </div>
   );
 }

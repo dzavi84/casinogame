@@ -36,3 +36,12 @@
         transform: rotate(360deg);
     }
 }
+
+.divBut {
+    display: flex;
+}
+
+.drugi {
+    background-color: orange;
+    float: right;
+}
