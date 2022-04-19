@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const NavBar = (props) => {
+const NavBar = (type) => {
   return (
     <div>
       <Container>
-        <a class='neon'>Neon</a>
+        <a className={`neon ${type}`}>Neon</a>
       </Container>
     </div>
   );
