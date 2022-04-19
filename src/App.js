@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <div className='divBut'>
-        <NavBar></NavBar>, <NavBar className='drugi'></NavBar>,<NavBar></NavBar>
+        <NavBar></NavBar>, <NavBar type='drugi'></NavBar>,<NavBar></NavBar>
       </div>
       <GlowBox></GlowBox>
     </div>
