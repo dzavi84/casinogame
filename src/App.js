@@ -50,6 +50,8 @@ function App() {
     <div>
       <div className='divBut'>
         <NavBar></NavBar>, <NavBar type={'drugi'}></NavBar>,<NavBar></NavBar>
+        =======
+        <NavBar></NavBar>, <NavBar type='drugi'></NavBar>,<NavBar></NavBar>
       </div>
       <GlowBox>
         <div className='App'>

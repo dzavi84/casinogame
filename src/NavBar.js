@@ -4,7 +4,7 @@ const NavBar = ({ type }) => {
   return (
     <div>
       <Container>
-        <a className={`neon ${type}`}>Neon</a>
+        <a className={`neon ${type}`}> Neon </a>
       </Container>
     </div>
   );
