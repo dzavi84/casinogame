@@ -37,14 +37,13 @@
     }
 }
 
+.neon.drugi {
+    padding: 0.25em 230px;
+}
+
 .divBut {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-}
-
-.drugi {
-    background-color: orange;
-    float: right;
 }

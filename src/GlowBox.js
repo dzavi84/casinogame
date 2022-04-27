@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import LeftSide from './LeftSide';
 
 const NavBar = (props) => {
   return (
     <div class='box glowing'>
       <div className='App'>
-        <h1> Hello from react </h1>
+        <LeftSide></LeftSide>
       </div>
     </div>
   );
