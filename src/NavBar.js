@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const NavBar = ({ type }) => {
+const NavBar = ({ type, text }) => {
   return (
     <div>
       <Container>
-        <a className={`neon ${type}`}> Neon </a>
+        <a className={`neon ${type}`}> {text} </a>
       </Container>
     </div>
   );

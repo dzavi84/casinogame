@@ -1,25 +1,47 @@
-import React, { Fragment } from 'react';
+//import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
-const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
+function Clock() {
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date('May 30,2023 ').getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        // Stop Timer
+
+        clearInterval(interval.current);
+      } else {
+        // Update Timer
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
+
+  useEffect(() => {
+    startTimer();
+  });
   return (
     <Fragment>
       <section className='timer-container'>
         <section className='timer'>
           <div className='clock'>
             <section>
-              <p>{timerDays}</p>
-              <small>Days</small>
-            </section>
-            <span>:</span>
-            <section>
-              <p>{timerHours}</p>
-              <small>Hours</small>
-            </section>{' '}
-            <span>:</span>
-            <section>
               <p>{timerMinutes}</p>
               <small>Minutes</small>
-            </section>{' '}
+            </section>
             <span>:</span>
             <section>
               <p>{timerSeconds}</p>
@@ -30,13 +52,11 @@ const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
       </section>
     </Fragment>
   );
-};
+}
 
 Clock.defaultProps = {
-  timerDays: 10,
-  timerHours: 10,
-  timerMinutes: 10,
-  timerSeconds: 10,
+  timerMinutes: 3,
+  timerSeconds: 0,
 };
 
 export default Clock;
