@@ -11,7 +11,7 @@ body {
     position: relative;
     height: 768px;
     width: 1440px;
-    display: block;
+    display: flex;
     background: linear-gradient(0deg, black, #444444);
     margin-top: -30px;
 }

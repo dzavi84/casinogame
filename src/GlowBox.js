@@ -10,7 +10,8 @@ const NavBar = (props) => {
   return (
     <div class='box glowing'>
       <div className='App'>
-        <LeftSide onTimesup={onTimesup} duration={180} /> <RollDice></RollDice>
+        <LeftSide onTimesup={onTimesup} duration={180} />
+        <RollDice />
       </div>
     </div>
   );
