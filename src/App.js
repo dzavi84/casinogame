@@ -3,9 +3,7 @@ import './flow.css';
 import './neonButton.css';
 import GlowBox from './GlowBox';
 import NavBar from './NavBar';
-import LeftSide from './LeftSide';
 import './clock.css';
-import React, { useState, useEffect } from 'react';
 function App() {
   return (
     <div>

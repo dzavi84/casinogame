@@ -1,0 +1,477 @@
+body {
+    background: #000000;
+}
+
+@keyframes shake {
+    0% {
+        left: 0px;
+        top: 0px;
+        transform: rotateX(80deg) rotateY(100deg);
+    }
+    25% {
+        left: 300px;
+        top: 0px;
+        transform: rotateX(150deg) rotateY(-80deg);
+    }
+    50% {
+        left: 300px;
+        top: 600px;
+        transform: rotateX(-80deg) rotateY(200deg);
+    }
+    75% {
+        left: 0px;
+        top: 600px;
+        transform: rotateX(180deg) rotateY(60deg);
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        transform: rotateX(90deg) rotateY(180deg);
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        left: 0px;
+        top: 0px;
+        -webkit-transform: rotateX(80deg) rotateY(100deg);
+    }
+    25% {
+        left: 300px;
+        top: 0px;
+        -webkit-transform: rotateX(150deg) rotateY(-80deg);
+    }
+    50% {
+        left: 300px;
+        top: 600px;
+        -webkit-transform: rotateX(-80deg) rotateY(200deg);
+    }
+    75% {
+        left: 0px;
+        top: 600px;
+        -webkit-transform: rotateX(180deg) rotateY(60deg);
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        -webkit-transform: rotateX(90deg) rotateY(180deg);
+    }
+}
+
+@keyframes shake2 {
+    0% {
+        right: 0px;
+        bottom: 0px;
+        transform: rotateX(80deg) rotateY(100deg);
+    }
+    25% {
+        right: 300px;
+        bottom: 0px;
+        transform: rotateX(150deg) rotateY(-80deg);
+    }
+    50% {
+        right: 300px;
+        bottom: 600px;
+        transform: rotateX(-80deg) rotateY(200deg);
+    }
+    75% {
+        right: 0px;
+        bottom: 600px;
+        transform: rotateX(180deg) rotateY(60deg);
+    }
+    100% {
+        right: 0px;
+        bottom: 0px;
+        transform: rotateX(90deg) rotateY(180deg);
+    }
+}
+
+@-webkit-keyframes shake2 {
+    0% {
+        right: 0px;
+        bottom: 0px;
+        -webkit-transform: rotateX(80deg) rotateY(100deg);
+    }
+    25% {
+        right: 300px;
+        bottom: 0px;
+        -webkit-transform: rotateX(150deg) rotateY(-80deg);
+    }
+    50% {
+        right: 300px;
+        bottom: 600px;
+        -webkit-transform: rotateX(-80deg) rotateY(200deg);
+    }
+    75% {
+        right: 0px;
+        bottom: 600px;
+        -webkit-transform: rotateX(180deg) rotateY(60deg);
+    }
+    100% {
+        right: 0px;
+        bottom: 0px;
+        -webkit-transform: rotateX(90deg) rotateY(180deg);
+    }
+}
+
+.viewport {
+    margin-bottom: -200px;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+}
+
+#cube {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(80deg) rotateY(100deg);
+    transition: transform 0.5s linear;
+    transform-style: preserve-3d;
+    transform: rotateX(80deg) rotateY(100deg);
+}
+
+#cube>div {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #555;
+    border-radius: 60px;
+}
+
+#cube>div:first-child {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+#cube>div:nth-child(2) {
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+
+#cube>div:nth-child(3) {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+#cube>div:nth-child(4) {
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+#cube>div:nth-child(5) {
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+#cube>div:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+}
+
+#cube2 {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(80deg) rotateY(100deg);
+    transition: transform 0.5s linear;
+    transform-style: preserve-3d;
+    transform: rotateX(80deg) rotateY(100deg);
+}
+
+#cube2>div {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #555;
+    border-radius: 60px;
+}
+
+#cube2>div:first-child {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+#cube2>div:nth-child(2) {
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+
+#cube2>div:nth-child(3) {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+    text-align: center;
+}
+
+#cube2>div:nth-child(4) {
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+#cube2>div:nth-child(5) {
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+#cube2>div:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+}
+
+.side1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side2 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side2Second {
+    margin-top: 170px;
+    float: right;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side3 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side3Second {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side3Third {
+    margin-top: 30px;
+    float: right;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side4 {
+    float: left;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side4Second {
+    float: right;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side4Third {
+    clear: both;
+    float: left;
+    margin-top: 170px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side4Fourth {
+    float: right;
+    margin-top: 170px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side5 {
+    float: left;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side5Second {
+    float: right;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side5Third {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side5Fourth {
+    float: left;
+    margin-top: 40px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side5Fifth {
+    float: right;
+    margin-top: 40px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6 {
+    float: left;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6Second {
+    float: right;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6Third {
+    clear: both;
+    float: left;
+    margin-top: 35px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6Fourth {
+    float: right;
+    margin-top: 35px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6Fifth {
+    clear: both;
+    float: left;
+    margin-top: 35px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+.side6Sixth {
+    float: right;
+    margin-top: 35px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 15px 15px 25px #000000 inset;
+}
+
+button {
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+    background: #000066;
+    color: #fff;
+    border: 8px solid;
+    border-radius: 50px;
+}
+
+button:hover {
+    background: #fff;
+    color: #000066;
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+}
+
+button:active {
+    background: green;
+    transform: scale(0.9, 0.9);
+    -webkit-transform: scale(1.3, 1.3);
+}
